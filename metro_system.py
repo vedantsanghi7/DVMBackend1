@@ -43,7 +43,7 @@ class MetroSystem:
             return None
 
     def calculate_price(self, path):
-        return (len(path) - 1) * 5 if path else 0  # ₹5 per hop
+        return (len(path) - 1) * 5 if path else 0
 
     def purchase_ticket(self, src, dest):
         path = self.shortest_path(src, dest)
@@ -110,7 +110,7 @@ class MetroSystem:
         ]
         plt.legend(handles=legend_handles, title="Metro Lines", loc="upper left")
 
-        plt.title("Washington Metro Map (Simplified)", fontsize=12, fontweight='bold')
+        plt.title("Washington Metro Map", fontsize=12, fontweight='bold')
         plt.axis("off")
         plt.tight_layout()
         plt.show()
